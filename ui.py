@@ -11,7 +11,7 @@ def create_widgets():
 
     widget_start_date = widgets.DatePicker(layout={'width': 'initial'}, description='Start Date/Time', disabled=False, value=dt.date.today())
     widget_start_time = widgets.Dropdown(layout={'width': 'initial'}, options=time_list)
-    station = widgets.Text(value='KTLH', description='Station:', disabled=False, layout=Layout(width='150px'))
+    station = widgets.Text(value='OAX', description='Station:', disabled=False, layout=Layout(width='150px'))
 
     start = widgets.HBox([widget_start_date, widget_start_time], layout=Layout(justify_content='flex-start'))
     return widgets.VBox([label1, start, station], layout=Layout(justify_content='flex-start'))
